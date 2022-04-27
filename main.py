@@ -3,17 +3,18 @@ Tic-tac-toe game utils.
 '''
 
 
+
 def create_empty_board():
 
     board = []
     for i in range(3):
-        board.append([None] * 3)
+        board.append(["-"] * 3)
 
     return board
 
 
 def print_board(board):
-
+   
     print('\n'.join([str(row) for row in board]))
 
 
